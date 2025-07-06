@@ -1,3 +1,66 @@
-@import "fonts"
 @import "vars"
 
+header
+  padding: 32px 0
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 233px
+  width: 100%
+  margin: 0 auto 0 0
+
+.contact-box
+  position: relative
+  z-index: 1
+  color: #fff
+  padding: 0 60px 0 0
+
+.phone
+  font-size: 24px
+  font-weight: 750
+  color: #fff
+  line-height: 27px
+  letter-spacing: 0.6px
+  text-shadow: rgb(0, 98, 109) 1px 0px 0px, rgb(0, 98, 109) 0.540302px 0.841471px 0px, rgb(0, 98, 109) -0.416147px 0.909297px 0px, rgb(0, 98, 109) -0.989992px 0.14112px 0px, rgb(0, 98, 109) -0.653644px -0.756802px 0px, rgb(0, 98, 109) 0.283662px -0.958924px 0px, rgb(0, 98, 109) 0.96017px -0.279415px 0px
+  position: relative
+  z-index: 1
+  &::before
+    content: attr(data-text)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    color: transparent
+    text-shadow: 0px 0px 10px #582C6D, 4px 0px 25px rgba(#3E224B7A,.48)
+    z-index: -1
+  &:after  
+    content: attr(data-shadow)
+    position: absolute
+    top: 2px
+    left: 2px
+    width: 100%
+    height: 100%
+    color: transparent
+    text-shadow: 1px 0px 0px #00626D
+    z-index: -2
+  &:hover
+    color: $accent  
+
+.whatsapp-link
+  text-align: right
+  margin: 0 0 0 auto
+  opacity: 0.8
+  color: #fff
+  letter-spacing: 0.4px
+  &:hover
+    opacity: 1
+  &__icon
+    position: absolute
+    right: 0
+    top: 0
+    width: 48px
+    height: 48px
+    @include d-flex
