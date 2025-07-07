@@ -165,7 +165,7 @@ button, .btn
   padding: 0
   span
     padding: 13px 20px 13px 32px
-
+    width: 100%
   .btn-icon
     padding: 3px
     height: 52px
@@ -235,21 +235,24 @@ ul, ol
     padding: 0 24px
 
 h1, .h1
-  width: 100%
-  text-transform: uppercase
   font-family: $title-font
-  font-weight: 400
-  margin: 0 0 24px
   span
-    font-size: 117px
-    line-height: 95%
-    letter-spacing: 0.03em
+    position: relative
     text-transform: uppercase
     background: linear-gradient(0deg, #ab6b8b 1.04%, #ffae43 10.1%, #ffefda 81.73%, #fdbc48 93.75%, #fbf1d1 97.92%, #ab6b8b 99.99%, #ecc5a3 100%)
     background-clip: text
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-    
+    display: inline-block
+    &::before
+      content: attr(data-text)
+      position: absolute
+      top: 2px
+      left: 2px
+      z-index: -1
+      color: #00323A
+      -webkit-text-fill-color: #00323A
+      background: none
 
 h2, .h2
   width: 100%
@@ -309,6 +312,9 @@ h3, .h3
 
 .mb-32
   margin-bottom: 32px
+
+.mb-20
+  margin-bottom: 20px 
 
 // slick slider
 .slick-slider

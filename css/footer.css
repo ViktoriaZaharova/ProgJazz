@@ -20,14 +20,18 @@ footer::before {
   height: 592px;
   left: 0;
   background: url("../img/footer-decor1.png") no-repeat center center;
+  background-size: 100%;
 }
 footer:after {
   width: 240px;
   height: 393px;
   right: 0;
   background: url("../img/footer-decor2.png") no-repeat center center;
+  background-size: 100%;
 }
 footer .h2 {
+  font-size: 64px;
+  line-height: 100%;
   color: #fff;
   background: transparent;
   -webkit-text-fill-color: #fff;
