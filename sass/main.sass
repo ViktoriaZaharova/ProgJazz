@@ -7,13 +7,8 @@
   z-index: 1
   padding: 24px 0 500px
   h1
-    font-size: 117px
-    line-height: 95%
     margin: 80px 0 10px 0
-    position: relative
-    z-index: 1
     span
-      display: block
       &:nth-child(2)
         margin-left: -80px
     &::before
@@ -46,7 +41,7 @@
       color: transparent
       text-shadow: rgba(0, 50, 58, 0.698) 1px 0px 0px, rgba(0, 50, 58, 0.698) 0.540302px 0.841471px 0px, rgba(0, 50, 58, 0.698) -0.416147px 0.909297px 0px, rgba(0, 50, 58, 0.698) -0.989992px 0.14112px 0px, rgba(0, 50, 58, 0.698) -0.653644px -0.756802px 0px, rgba(0, 50, 58, 0.698) 0.283662px -0.958924px 0px, rgba(0, 50, 58, 0.698) 0.96017px -0.279415px 0px
   .btn-group
-    margin: 72px 0 0    
+    margin: 72px 0 0
 
 .home-image
   position: absolute
@@ -69,7 +64,7 @@
       color: transparent
       text-shadow: 0px 0px 10px #582C6D, 4px 0px 25px rgba(#3E224B7A,.48)
       z-index: -1
-    &:after  
+    &:after
       content: attr(data-shadow)
       position: absolute
       top: 2px
@@ -79,7 +74,6 @@
       color: transparent
       text-shadow: 1px 0px 0px #00626D
       z-index: -2
-
 
 .home-image-max
   right: 0
@@ -115,11 +109,9 @@
 .philosophy
   padding: 120px 0 100px
   .text-content
-    max-width: 478px
-    width: 100%
     margin: 0 0 0 auto
-    border: 1px solid rgba(#fff, .5)
-    backdrop-filter: blur(110px)
+
+  
 
 .philosophy-box
   width: 100%
@@ -144,5 +136,32 @@
     color: $blue
   &.color-orange
     h3
-      color: $accent  
+      color: $accent
 
+// about
+.about
+  padding: 0 0 100px
+  position: relative
+  z-index: 1
+  .box-text
+    max-width: 414px
+    color: rgba(#fff, .7)  
+  .text-content
+    max-width: 525px
+    margin: 0 110px 0 auto
+
+.about-image-min
+  margin: -43px 0 0 -122px
+  z-index: 1
+  position: relative      
+
+.about-image-max
+  position: absolute
+  right: 0
+  top: 120px
+  @include d-flex  
+
+
+.quote-section
+  h2
+    margin: 0 auto

@@ -236,14 +236,19 @@ ul, ol
 
 h1, .h1
   font-family: $title-font
+  font-size: 117px
+  line-height: 95%
+  position: relative
+  z-index: 1
+  margin: 0 0 24px
   span
+    display: block
     position: relative
     text-transform: uppercase
     background: linear-gradient(0deg, #ab6b8b 1.04%, #ffae43 10.1%, #ffefda 81.73%, #fdbc48 93.75%, #fbf1d1 97.92%, #ab6b8b 99.99%, #ecc5a3 100%)
     background-clip: text
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-    display: inline-block
     &::before
       content: attr(data-text)
       position: absolute
@@ -253,6 +258,7 @@ h1, .h1
       color: #00323A
       -webkit-text-fill-color: #00323A
       background: none
+      width: 100%
 
 h2, .h2
   width: 100%
@@ -270,11 +276,54 @@ h2, .h2
   font-weight: 400
   margin: 0 0 24px
 
+.title-no-gradient
+  background: transparent
+  color: #fff
+  -webkit-text-fill-color: inherit
+  font-size: 64px
+  line-height: 100%
+  margin: 0 0 16px
+  
+
 h3, .h3
   width: 100%
   margin: 0
   font-size: 24px
   font-weight: 700
+
+.nav-breadcrumb
+  width: 100%
+  margin: 0 0 24px
+
+.breadcrumb
+  margin: 0
+  font-size: 18px
+  line-height: 22px
+  font-family: $font
+  display: flex
+  align-items: flex-start
+  justify-content: center
+
+.breadcrumb-item
+  padding: 0
+  a
+    display: flex
+    align-items: center
+    color: #fff
+    &::after
+      content: '/'
+      margin: 0 10px
+      display: inline-block
+
+.breadcrumb-item+.breadcrumb-item::before
+  display: none
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0
+
+.breadcrumb-item.active
+  color: #fff
+  opacity: 0.5
 
 .box-text
   font-family: $font
@@ -292,6 +341,10 @@ h3, .h3
   letter-spacing: 0.4px
   font-weight: 450
   padding: 32px
+  max-width: 478px
+  width: 100%
+  border: 1px solid rgba(#fff, .5)
+  backdrop-filter: blur(110px)
   p
     margin: 0 0 32px
     &:last-child
@@ -310,11 +363,32 @@ h3, .h3
 .mb-80
   margin-bottom: 80px
 
+.mb-48
+  margin-bottom: 48px  
+
 .mb-32
   margin-bottom: 32px
 
 .mb-20
-  margin-bottom: 20px 
+  margin-bottom: 20px
+
+.m-0
+  margin: 0  
+
+.ml-auto
+  margin-left: auto
+
+.bg-green
+  background: #032628
+
+.color-accent
+  color: $accent
+
+.color-green
+  color: $blue
+
+.page
+  padding: 8px 0 120px
 
 // slick slider
 .slick-slider

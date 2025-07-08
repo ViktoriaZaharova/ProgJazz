@@ -34,7 +34,7 @@ footer .h2 {
   line-height: 100%;
   color: #fff;
   background: transparent;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: inherit;
 }
 
 .list-messangers {

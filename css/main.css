@@ -5,14 +5,7 @@
   padding: 24px 0 500px;
 }
 .home h1 {
-  font-size: 117px;
-  line-height: 95%;
   margin: 80px 0 10px 0;
-  position: relative;
-  z-index: 1;
-}
-.home h1 span {
-  display: block;
 }
 .home h1 span:nth-child(2) {
   margin-left: -80px;
@@ -127,12 +120,7 @@
   padding: 120px 0 100px;
 }
 .philosophy .text-content {
-  max-width: 478px;
-  width: 100%;
   margin: 0 0 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(110px);
-          backdrop-filter: blur(110px);
 }
 
 .philosophy-box {
@@ -161,4 +149,37 @@
 }
 .philosophy-box.color-orange h3 {
   color: #F9A437;
+}
+
+.about {
+  padding: 0 0 100px;
+  position: relative;
+  z-index: 1;
+}
+.about .box-text {
+  max-width: 414px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.about .text-content {
+  max-width: 525px;
+  margin: 0 110px 0 auto;
+}
+
+.about-image-min {
+  margin: -43px 0 0 -122px;
+  z-index: 1;
+  position: relative;
+}
+
+.about-image-max {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-section h2 {
+  margin: 0 auto;
 }
