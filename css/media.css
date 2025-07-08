@@ -30,8 +30,11 @@
   .home h1 span:nth-child(2) {
     margin: 0;
   }
-  .home h1 {
+  h1, .h1 {
     font-size: 70px;
+  }
+  .about-image-max {
+    max-width: 600px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -46,6 +49,9 @@
   }
   .mb-80 {
     margin-bottom: 40px;
+  }
+  .p-120 {
+    padding: 60px 0;
   }
   .box-text {
     font-size: 16px;
@@ -79,7 +85,7 @@
   .home h3 {
     font-size: 24px;
   }
-  .home h1 {
+  h1, .h1 {
     font-size: 50px;
   }
   .philosophy-box h3 {
@@ -103,10 +109,19 @@
   footer {
     padding: 60px 0;
   }
+  .about-image-min {
+    margin: 20px 0 0;
+  }
+  .about-image-max {
+    max-width: 400px;
+  }
 }
 @media only screen and (max-width: 992px) {
   h2, .h2 {
     margin: 0 0 12px;
+  }
+  .title-no-gradient {
+    font-size: 50px;
   }
   footer {
     padding: 40px 0;
@@ -135,8 +150,33 @@
   .philosophy h3 br {
     display: none;
   }
+  .page {
+    padding: 8px 0 60px;
+  }
+  .page-philosophy .text-content {
+    margin: 0 0 20px;
+  }
+  .about .text-content {
+    margin: 0 auto;
+    max-width: none;
+  }
+  .about .box-text {
+    max-width: none;
+  }
+  .about-image-max {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .title-no-gradient {
+    font-size: 30px;
+  }
   header {
     padding: 24px 0;
   }
@@ -157,6 +197,9 @@
   }
   .mb-20 {
     margin-bottom: 20px;
+  }
+  .mb-48 {
+    margin-bottom: 30px;
   }
   .home {
     padding: 24px 0;
@@ -195,10 +238,19 @@
     position: relative;
     margin: 20px 0 0;
   }
+  .breadcrumb {
+    font-size: 16px;
+  }
+  .breadcrumb-item a::after {
+    margin: 0 5px;
+  }
 }
 @media only screen and (max-width: 576px) {
   h2, .h2 {
     font-size: 30px;
+  }
+  .title-no-gradient {
+    font-size: 24px;
   }
   .btn {
     font-size: 14px;
@@ -232,7 +284,7 @@
   .subtitle-text {
     font-size: 18px;
   }
-  .home h1 {
+  .h1, h1 {
     font-size: 40px;
   }
   .home h3 {
