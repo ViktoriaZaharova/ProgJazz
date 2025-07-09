@@ -105,10 +105,27 @@ label
   &:last-child
     margin: 0
 
+.label-title
+  margin: 0 0 16px
+  width: 100%
+  display: block
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: 0.02em
+  font-family: 'Andika', sans-serif   
+   
+
 textarea
   resize: none
   padding: 16px 24px
   height: 120px
+
+.select-my
+  background: rgba(#fff,.05 ) url('../img/arrow-select.svg') no-repeat calc( 100% - 16px ) center
+  background-size: 32px
+  color: rgba(#fff, .5)
+  &:hover, &:focus
+    color: #fff
 
 button, .btn
   outline: none
@@ -195,6 +212,12 @@ button, .btn
   &:hover, &:focus
     border-color: #fff
 
+.btn-blue
+  background: #399297
+  color: #fff
+  &::before
+    background: $accent
+
 .btn-group
   flex-wrap: wrap
   .btn
@@ -266,7 +289,7 @@ h2, .h2
   font-weight: 400
   font-size: 73px
   line-height: 95%
-  letter-spacing: 0.03em
+  letter-spacing: 3px
   text-transform: uppercase
   background: linear-gradient(0deg, #ab6b8b 1.04%, #ffae43 10.1%, #ffefda 81.73%, #fdbc48 93.75%, #fbf1d1 97.92%, #ab6b8b 99.99%, #ecc5a3 100%)
   background-clip: text
@@ -283,7 +306,6 @@ h2, .h2
   font-size: 64px
   line-height: 100%
   margin: 0 0 16px
-  
 
 h3, .h3
   width: 100%
@@ -325,6 +347,55 @@ h3, .h3
   color: #fff
   opacity: 0.5
 
+.nav-pagination
+  width: 100%
+  margin: 0
+
+.pagination
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0
+  font-family: "Andika", sans-serif
+  font-size: 18px
+  font-weight: normal
+  line-height: 22px
+  li
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+      .page-link
+        border-radius: 0
+    &:first-child
+      .page-link
+        border-radius: 0    
+    &.active
+      .page-link
+        color: #fff
+        background: transparent
+  .page-link
+    font-family: "Andika", sans-serif
+    font-size: 18px
+    color: rgba(#fff, .5)
+    background: transparent
+    border: none
+    border-radius: 0
+    &:hover, &:focus
+      box-shadow: none
+      color: $accent
+  .page-link-arrow
+    border: 1px solid #fff   
+    width: 52px
+    height: 52px
+    min-width: 52px
+    padding: 10px
+    fill: #fff
+    &:hover
+      background: $accent 
+
+.page-item:not(:first-child) .page-link
+  margin-left: 0
+
 .box-text
   font-family: $font
   font-size: 18px
@@ -364,16 +435,19 @@ h3, .h3
   margin-bottom: 80px
 
 .mb-48
-  margin-bottom: 48px  
+  margin-bottom: 48px
 
 .mb-32
   margin-bottom: 32px
+
+.mb-24
+  margin-bottom: 24px  
 
 .mb-20
   margin-bottom: 20px
 
 .m-0
-  margin: 0  
+  margin: 0
 
 .ml-auto
   margin-left: auto
@@ -389,6 +463,28 @@ h3, .h3
 
 .page
   padding: 8px 0 120px
+
+.form-search
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: flex-start
+  margin: 24px 0 0
+  label
+    margin: 0
+  [type="submit"]
+    padding: 11px
+    fill: #fff
+    width: 54px
+    height: 54px
+    min-width: 54px
+    svg
+      width: 22px
+      height: 22px
+      min-width: 22px
+    &:hover, &:focus
+      fill: #fff
+
 
 // slick slider
 .slick-slider
