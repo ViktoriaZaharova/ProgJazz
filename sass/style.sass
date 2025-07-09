@@ -264,10 +264,10 @@ h1, .h1
   position: relative
   z-index: 1
   margin: 0 0 24px
+  text-transform: uppercase
   span
     display: block
     position: relative
-    text-transform: uppercase
     background: linear-gradient(0deg, #ab6b8b 1.04%, #ffae43 10.1%, #ffefda 81.73%, #fdbc48 93.75%, #fbf1d1 97.92%, #ab6b8b 99.99%, #ecc5a3 100%)
     background-clip: text
     -webkit-background-clip: text
@@ -429,6 +429,9 @@ h3, .h3
 .color-white50
   color: rgba(255, 255, 255, 0.5)
 
+.wrapper
+  background: #032628  
+
 .bg-fixed
   background: url('../img/bg.jpg') no-repeat center center fixed
   background-size: cover
@@ -497,6 +500,46 @@ h3, .h3
 
 .slick-slide
   outline: none
+
+.slick-arrow
+  background: transparent
+  width: 52px
+  height: 52px
+  min-width: 52px
+  opacity: 1
+  position: relative
+  z-index: 1
+  border: 1px solid #fff
+  border-radius: 0
+  box-shadow: none
+  fill: #fff
+  @include d-flex
+  svg
+    width: 32px
+    height: 32px
+  &:hover, &:focus
+    background: $accent
+    fill: #fff 
+
+.slider-nav
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+  .slick-arrow
+    margin: 0 24px 0 0
+    &:last-child
+      margin: 0
+
+.slider-stretch 
+  .slick-list
+    margin: 0 -12px
+  .slick-track
+    display: flex
+    align-items: stretch  
+  .slide
+    height: auto
+    padding: 0 12px
+
 
 //checkbox my
 .label-checkbox

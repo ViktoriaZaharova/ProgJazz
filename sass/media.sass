@@ -81,6 +81,15 @@
   .product-card-max .product-card__body
     height: calc( 100% - 600px )
 
+  .page-product__footer .price
+    font-size: 30px
+
+  .page-product__footer
+    padding: 20px
+
+  .title-no-gradient
+    font-size: 54px
+
 @media only screen and (max-width: 1200px)
   h2, .h2
     font-size: 50px
@@ -161,6 +170,12 @@
 
   .product-card__body .btn
     margin: 12px 0 0
+
+  .page-product__footer .price
+    font-size: 24px
+    
+  .page-product-content, .page-product__footer
+    margin: 20px 0 0    
 
 @media only screen and (max-width: 992px)
   h2, .h2
@@ -316,6 +331,16 @@
   .pagination .page-link
     font-size: 16px  
 
+  .slider-nav
+    justify-content: flex-start
+    margin: 0 0 20px  
+
+  .page-product-gallery-preview .product-gallery-item
+    height: 120px
+
+  .page-product-gallery-max .product-gallery-item
+    height: 400px    
+
 @media only screen and (max-width: 576px)
   h2, .h2
     font-size: 30px
@@ -367,6 +392,24 @@
   .select-my
     background-size: 24px
 
+  .page-product-gallery-preview
+    display: none
+
+  .page-product-gallery-max
+    width: 100%
+    padding: 0 
+    .product-gallery-item
+      height: auto
+    .slick-arrow
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+      background: #032628
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
 @media only screen and (max-width: 420px)
   .logo
     max-width: 130px
@@ -381,5 +424,15 @@
 
   .contact-box
     padding: 0 34px 0 0
+
+  .page-product__footer
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .price
+      margin: 0 auto 10px
+
+  .p-60
+    padding: 40px 0      
 
 @media only screen and (max-width: 370px)

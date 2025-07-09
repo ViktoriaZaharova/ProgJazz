@@ -110,7 +110,9 @@
   padding: 120px 0 100px
   .text-content
     margin: 0 0 0 auto
-
+  &.bg-image
+    background: url('../img/philosophy-bg.jpg') no-repeat center
+    background-size: cover
   
 
 .philosophy-box
@@ -277,3 +279,84 @@
 .page-catalog
   h1
     margin: 0      
+
+// product page
+.page-product
+  .nav-breadcrumb
+    margin: 0 0 32px
+  .breadcrumb
+    justify-content: flex-start  
+  .list-characteristics
+    max-width: 368px
+    margin: 16px 0 0
+    li
+      p, span
+        background: #032628
+
+.page-product-content
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  padding: 0 0 16px
+  .box-text
+    color: rgba(#fff, .6)
+
+.page-product__footer
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  background: #1E4A4C
+  border: 1px solid rgba(255, 255, 255, 0.6)
+  padding: 24px
+  margin: auto 0 0
+  .price
+    font-size: 40px
+    font-family: $title-font
+    text-transform: uppercase
+    line-height: 100%
+    margin: 0 auto 0 0
+
+.page-product-gallery
+  width: 100%
+  position: relative
+  z-index: 1
+  display: flex
+  align-items: stretch
+
+
+.page-product-gallery-preview
+  width: 249px
+  position: relative
+  z-index: 1
+  padding: 0 0 0 68px
+  .slick-arrow
+    position: absolute
+    left: 0
+    bottom: 0
+    svg
+      transform: rotate(90deg)
+  .slick-next
+    bottom: 16px
+  .slick-prev
+    bottom: 84px
+  .product-gallery-item
+    border: 1px solid rgba(#fff, .6)   
+    margin: 0 0 16px
+    height: 181px
+
+.page-product-gallery-max
+  width: calc( 100% - 249px ) 
+  padding: 0 0 0 16px  
+  .product-gallery-item
+    height: 580px
+
+.product-gallery-item
+  width: 100%
+  height: 100%
+  @include d-flex
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover     
