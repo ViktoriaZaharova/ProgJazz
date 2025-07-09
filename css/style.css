@@ -491,6 +491,13 @@ h3, .h3 {
   background: transparent;
   border: none;
   border-radius: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pagination .page-link:hover, .pagination .page-link:focus {
   box-shadow: none;

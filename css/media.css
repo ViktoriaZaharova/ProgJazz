@@ -25,6 +25,9 @@
     width: 200px;
     height: 340px;
   }
+  .product-card__name {
+    font-size: 28px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .home h1 span:nth-child(2) {
@@ -35,6 +38,51 @@
   }
   .about-image-max {
     max-width: 600px;
+  }
+  .container, .container-fluid {
+    padding: 0 16px;
+  }
+  .row {
+    margin: 0 -16px;
+  }
+  .row > * {
+    padding: 0 16px;
+  }
+  .mb-32 {
+    margin-bottom: 24px;
+  }
+  .mb-80 {
+    margin-bottom: 40px;
+  }
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  .mb-48 {
+    margin-bottom: 30px;
+  }
+  .form-filter {
+    margin: 0 0 40px;
+  }
+  .product-card {
+    height: 600px;
+  }
+  .product-card__name {
+    font-size: 24px;
+  }
+  .product-card__img {
+    height: 300px;
+  }
+  .product-card__body {
+    height: calc(100% - 300px);
+  }
+  .product-card-max {
+    height: auto;
+  }
+  .product-card-max .product-card__img {
+    height: 600px;
+  }
+  .product-card-max .product-card__body {
+    height: calc(100% - 600px);
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -115,6 +163,15 @@
   .about-image-max {
     max-width: 400px;
   }
+  .product-card {
+    padding: 12px;
+  }
+  .product-card .box-text {
+    margin: 12px 0 0;
+  }
+  .product-card__body .btn {
+    margin: 12px 0 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   h2, .h2 {
@@ -171,6 +228,27 @@
     right: 0;
     max-width: 500px;
     margin: 20px auto 0;
+  }
+  .catalog .text-description {
+    max-width: none;
+  }
+  .catalog {
+    padding: 40px 0 80px;
+  }
+  .form-filter {
+    margin: 0 0 30px;
+  }
+  .product-card {
+    height: 100%;
+  }
+  .product-card-max {
+    height: 100%;
+  }
+  .product-card-max .product-card__img {
+    height: 300px;
+  }
+  .product-card-max .product-card__body {
+    height: calc(100% - 300px);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -244,6 +322,21 @@
   .breadcrumb-item a::after {
     margin: 0 5px;
   }
+  .pagination li {
+    margin: 0 10px 0 0;
+  }
+  .pagination li:last-child {
+    margin: 0;
+  }
+  .pagination .page-link-arrow {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    padding: 5px;
+  }
+  .pagination .page-link {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 576px) {
   h2, .h2 {
@@ -289,6 +382,13 @@
   }
   .home h3 {
     font-size: 18px;
+  }
+  input, textarea, select {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  .select-my {
+    background-size: 24px;
   }
 }
 @media only screen and (max-width: 420px) {
