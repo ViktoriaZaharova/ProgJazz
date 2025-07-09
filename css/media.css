@@ -362,6 +362,24 @@
   .page-product-gallery-max .product-gallery-item {
     height: 400px;
   }
+  .modal-content {
+    padding: 40px;
+  }
+  .modal-header {
+    position: initial;
+  }
+  .modal-header .btn-close {
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+  }
+  .modal-title {
+    padding: 0;
+  }
+  #thanksModal .modal-content {
+    min-height: auto;
+  }
 }
 @media only screen and (max-width: 576px) {
   h2, .h2 {
@@ -411,6 +429,9 @@
   input, textarea, select {
     font-size: 16px;
     padding: 0 20px;
+  }
+  textarea {
+    padding: 16px 20px;
   }
   .select-my {
     background-size: 24px;
@@ -463,5 +484,18 @@
   }
   .p-60 {
     padding: 40px 0;
+  }
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .consent {
+    margin: 0 0 10px;
+  }
+  .form-callback [type=submit] {
+    width: 100%;
+  }
+  .modal-content {
+    padding: 40px 24px;
   }
 }

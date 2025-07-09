@@ -324,7 +324,7 @@
                 <input type="text" placeholder="Имя" name="name" required>
               </label>
               <label>
-                <input type="text" placeholder="Имя" name="name" required>
+                <input type="text" placeholder="Телефон" name="phone" required>
               </label>
               <label>
                 <textarea name="message" placeholder="Ваше сообщение"></textarea>
@@ -345,6 +345,76 @@
       </div>
     </footer>
   </div>
+
+
+  <!-- modal -->
+
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title title-no-gradient">заявка
+            на покупку</h2>
+          <div class="box-text">
+            <p>Пожалуйста, проверьте правильность вашего выбора и заполните поля с контактной информацией. После
+              получения вашей заявки, мы свяжемся с вами в ближайшее время, чтобы обсудить детали покупки</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-callback form-callback-modal">
+            <label>
+              <select name="select" class="select-my">
+                <option value="Moon Blood, FRACTION">Moon Blood, FRACTION</option>
+                <option value="Moon Blood, FRACTION 2">Moon Blood, FRACTION 2</option>
+                <option value="Moon Blood, FRACTION">Moon Blood, FRACTION</option>
+              </select>
+            </label>
+            <label>
+              <input type="text" placeholder="Имя" name="name" required>
+            </label>
+            <label>
+              <input type="text" placeholder="Телефон" name="phone" required>
+            </label>
+            <label>
+              <textarea name="message" placeholder="Ваше сообщение"></textarea>
+            </label>
+
+            <div class="form-row">
+              <label class="label-checkbox consent">
+                <input type="checkbox" name="checkbox">
+                <span class="label-checkbox__custom"></span>
+                <span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+                  персональных данных</span>
+              </label>
+              <button type="submit" class="btn btn-accent">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+         <h2 class="modal-title title-no-gradient">Спасибо!</h2>
+          <div class="box-text">
+            <p>Мы получили Ваши контактные данные 
+и скоро с Вами свяжемся</p>
+          </div>
+
+          <a href="#" class="btn btn-blue btn-close-modal" data-bs-dismiss="modal" aria-label="Close">закрыть</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
