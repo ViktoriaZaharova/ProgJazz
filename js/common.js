@@ -48,3 +48,8 @@ $('.page-product-gallery-max').slick({
     }
   ]
 });
+
+// Fancybox
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});

@@ -385,23 +385,45 @@ h2, .h2 {
   font-size: 73px;
   line-height: 95%;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  font-family: "Benguiat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 24px;
+  position: relative;
+  z-index: 1;
+}
+h2 span, .h2 span {
+  display: block;
+  position: relative;
   background: linear-gradient(0deg, #ab6b8b 1.04%, #ffae43 10.1%, #ffefda 81.73%, #fdbc48 93.75%, #fbf1d1 97.92%, #ab6b8b 99.99%, #ecc5a3 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Benguiat", sans-serif;
-  font-weight: 400;
-  margin: 0 0 24px;
+}
+h2 span::before, .h2 span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: -1;
+  color: #00323A;
+  -webkit-text-fill-color: #00323A;
+  background: none;
+  width: 100%;
 }
 
 .title-no-gradient {
-  background: transparent;
   color: #fff;
-  -webkit-text-fill-color: inherit;
   font-size: 64px;
   line-height: 100%;
   margin: 0 0 16px;
+}
+.title-no-gradient span {
+  background: transparent;
+  -webkit-text-fill-color: inherit;
+  display: inline;
+}
+.title-no-gradient span::before {
+  display: none;
 }
 
 h3, .h3 {
